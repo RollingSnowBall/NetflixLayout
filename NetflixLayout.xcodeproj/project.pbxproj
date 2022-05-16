@@ -12,12 +12,12 @@
 		B8FEB71028324A040031C06F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FEB70F28324A040031C06F /* Assets.xcassets */; };
 		B8FEB71328324A040031C06F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FEB71128324A040031C06F /* LaunchScreen.storyboard */; };
 		B8FEB71B28324A5C0031C06F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB71A28324A5C0031C06F /* HomeViewController.swift */; };
-		B8FEB71E28324C190031C06F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B8FEB71D28324C190031C06F /* SnapKit */; };
-		B8FEB72028324C190031C06F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B8FEB71F28324C190031C06F /* SnapKit-Dynamic */; };
 		B8FEB72228324E5E0031C06F /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8FEB72128324E5E0031C06F /* Content.plist */; };
 		B8FEB72428324EA50031C06F /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB72328324EA50031C06F /* Content.swift */; };
 		B8FEB726283252930031C06F /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB725283252930031C06F /* ContentCollectionViewCell.swift */; };
 		B8FEB728283254DB0031C06F /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB727283254DB0031C06F /* ContentCollectionViewHeader.swift */; };
+		B8FEB72B283277120031C06F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B8FEB72A283277120031C06F /* SnapKit */; };
+		B8FEB72D283288B30031C06F /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB72C283288B30031C06F /* ContentCollectionViewRankCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +32,7 @@
 		B8FEB72328324EA50031C06F /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		B8FEB725283252930031C06F /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		B8FEB727283254DB0031C06F /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
+		B8FEB72C283288B30031C06F /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8FEB71E28324C190031C06F /* SnapKit in Frameworks */,
-				B8FEB72028324C190031C06F /* SnapKit-Dynamic in Frameworks */,
+				B8FEB72B283277120031C06F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,14 +68,15 @@
 			children = (
 				B8FEB70628324A030031C06F /* AppDelegate.swift */,
 				B8FEB70828324A030031C06F /* SceneDelegate.swift */,
+				B8FEB72328324EA50031C06F /* Content.swift */,
+				B8FEB71A28324A5C0031C06F /* HomeViewController.swift */,
+				B8FEB725283252930031C06F /* ContentCollectionViewCell.swift */,
+				B8FEB727283254DB0031C06F /* ContentCollectionViewHeader.swift */,
 				B8FEB70F28324A040031C06F /* Assets.xcassets */,
 				B8FEB71128324A040031C06F /* LaunchScreen.storyboard */,
 				B8FEB71428324A040031C06F /* Info.plist */,
-				B8FEB71A28324A5C0031C06F /* HomeViewController.swift */,
 				B8FEB72128324E5E0031C06F /* Content.plist */,
-				B8FEB72328324EA50031C06F /* Content.swift */,
-				B8FEB725283252930031C06F /* ContentCollectionViewCell.swift */,
-				B8FEB727283254DB0031C06F /* ContentCollectionViewHeader.swift */,
+				B8FEB72C283288B30031C06F /* ContentCollectionViewRankCell.swift */,
 			);
 			path = NetflixLayout;
 			sourceTree = "<group>";
@@ -97,8 +98,7 @@
 			);
 			name = NetflixLayout;
 			packageProductDependencies = (
-				B8FEB71D28324C190031C06F /* SnapKit */,
-				B8FEB71F28324C190031C06F /* SnapKit-Dynamic */,
+				B8FEB72A283277120031C06F /* SnapKit */,
 			);
 			productName = NetflixLayout;
 			productReference = B8FEB70328324A030031C06F /* NetflixLayout.app */;
@@ -129,7 +129,7 @@
 			);
 			mainGroup = B8FEB6FA28324A030031C06F;
 			packageReferences = (
-				B8FEB71C28324C190031C06F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B8FEB729283277120031C06F /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = B8FEB70428324A030031C06F /* Products */;
 			projectDirPath = "";
@@ -161,6 +161,7 @@
 				B8FEB70728324A030031C06F /* AppDelegate.swift in Sources */,
 				B8FEB728283254DB0031C06F /* ContentCollectionViewHeader.swift in Sources */,
 				B8FEB70928324A030031C06F /* SceneDelegate.swift in Sources */,
+				B8FEB72D283288B30031C06F /* ContentCollectionViewRankCell.swift in Sources */,
 				B8FEB71B28324A5C0031C06F /* HomeViewController.swift in Sources */,
 				B8FEB72428324EA50031C06F /* Content.swift in Sources */,
 				B8FEB726283252930031C06F /* ContentCollectionViewCell.swift in Sources */,
@@ -307,7 +308,6 @@
 				INFOPLIST_FILE = NetflixLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,7 +319,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,7 +335,6 @@
 				INFOPLIST_FILE = NetflixLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -375,7 +374,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B8FEB71C28324C190031C06F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		B8FEB729283277120031C06F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -386,15 +385,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B8FEB71D28324C190031C06F /* SnapKit */ = {
+		B8FEB72A283277120031C06F /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B8FEB71C28324C190031C06F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = B8FEB729283277120031C06F /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		B8FEB71F28324C190031C06F /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B8FEB71C28324C190031C06F /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
